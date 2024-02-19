@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{type} {user_name} on {software_instance}",
+ "creation": "2024-02-19 16:29:17.955053",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "itm_landscape",
+  "contact",
+  "column_break_vujyj",
+  "status",
+  "user_name",
+  "host_section",
+  "itm_software_instance",
+  "column_break_v33gq",
+  "section_break_10",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "itm_landscape",
+   "fieldtype": "Link",
+   "label": "ITM Landscape",
+   "options": "ITM Landscape"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Link",
+   "label": "Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "column_break_vujyj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Running",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Implementing\nRunning\nIssue\nStorage\nObsolet"
+  },
+  {
+   "description": "User name or Account name",
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User Name"
+  },
+  {
+   "fieldname": "host_section",
+   "fieldtype": "Section Break",
+   "label": "Host"
+  },
+  {
+   "fieldname": "itm_software_instance",
+   "fieldtype": "Link",
+   "label": "ITM Software Instance",
+   "options": "ITM Software Instance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_v33gq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "links": [],
+ "modified": "2024-02-19 16:29:17.955053",
+ "modified_by": "Administrator",
+ "module": "IT Management",
+ "name": "ITM User",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Support Team",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
